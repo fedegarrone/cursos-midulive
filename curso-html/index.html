@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="8f7ada" />
+    <!-- Tema de la página, más que nada para mobile-->
+    <link rel="icon" href="./images/fede.jpg" type="image/jpg" />
+
+    <!-- OPEN GRAPH  -  SEO -->
+    <!-- Se puede usar opengraph.xyz -->
+    <style>
+      body {
+        background-color: rgb(255, 248, 248);
+      }
+    </style>
+    <title>Portfolio de Fede</title>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio de Fede</h1>
+
+      <p>
+        6 años de estudiante de Ingeniería.
+        <strong>Próximo Software Developer</strong>.
+      </p>
+    </header>
+
+    <main>
+      <header>
+        <h2>Experiencia</h2>
+      </header>
+      <section>
+        <ol type="I" start="10">
+          <li class="exp-item">SOM Clean SRL 💩</li>
+          <li class="exp-item">Profesor de Secundaria Técnica</li>
+          <li class="exp-item">Próximo Software Developer</li>
+        </ol>
+
+        <a download href="./images/fede.jpg">
+          <img
+            id="perfil-id"
+            width="250"
+            src="./images/fede.jpg"
+            alt="Una fotografía de Federico Garrone."
+            title="Foto de Fede"
+          />
+        </a>
+      </section>
+      <section>
+        <h2>Formulario de Contacto</h2>
+
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Información Personal:</legend>
+            <div>
+              <label
+                >Nombre:
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Inserte su Nombre"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label
+                >Email:
+                <input
+                  type="email"
+                  id="name"
+                  name="name"
+                  placeholder="Introduce tu e-mail"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <datalist id="languages">
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="C#"></option>
+              </datalist>
+              <label
+                >¿Qué lenguaje te gusta más?<input
+                  list="languages"
+                  name="languages"
+              /></label>
+            </div>
+          </fieldset>
+          <input type="submit" value="Enviar Datos" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
