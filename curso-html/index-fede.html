@@ -19,12 +19,30 @@
   </head>
   <body>
     <header>
+      <section>
+        <dialog id="modal">
+          <h1>¿Sabías que puedes abrir una modal así?</h1>
+          <p>Y es totalmente native :3</p>
+          <button id="clsModal">Cerrar Modal</button>
+        </dialog>
+      </section>
       <h1>Portfolio de Fede</h1>
 
       <p>
         6 años de estudiante de Ingeniería.
         <strong>Próximo Software Developer</strong>.
       </p>
+      <a download href="./images/fede.jpg">
+        <img
+          id="perfil-id"
+          width="250"
+          src="./images/fede.jpg"
+          alt="Una fotografía de Federico Garrone."
+          title="Foto de Fede"
+        />
+      </a>
+      <br />
+      <button id="opnModal">Ver más info</button>
     </header>
 
     <main>
@@ -37,16 +55,6 @@
           <li class="exp-item">Profesor de Secundaria Técnica</li>
           <li class="exp-item">Próximo Software Developer</li>
         </ol>
-
-        <a download href="./images/fede.jpg">
-          <img
-            id="perfil-id"
-            width="250"
-            src="./images/fede.jpg"
-            alt="Una fotografía de Federico Garrone."
-            title="Foto de Fede"
-          />
-        </a>
       </section>
       <section>
         <h2>Formulario de Contacto</h2>
@@ -97,4 +105,12 @@
       </section>
     </main>
   </body>
+  <script>
+    window.opnModal.addEventListener("click", () => {
+      window.modal.showModal();
+    });
+    window.clsModal.addEventListener("click", () => {
+      window.modal.close();
+    });
+  </script>
 </html>
